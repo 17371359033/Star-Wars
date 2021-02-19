@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* font-size: 21px; */
+    border: none;
+    outline: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px; 
+    
+}
+button:hover{
+    cursor: pointer;
+    background-color: #f39c12 !important;
+}
+.box{
+    width: 500px;
+    height: 700px; 
+    overflow: hidden;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/background-1.jpg") center center;
+    background-repeat: repeat-y repeat-x;
+    position: relative; 
+    
+}
+.main .logo{
+    width: 219px;
+    height: 153px;
+    margin-top: 110px;
+    /* border: 1px solid blue; */
+}
+.main .logo img{
+    width: 100%;
+    height: 100%;
+}
+.main .start{
+    width: 219px;
+    height: 153px;
+    margin-top: 50px;
+}
+.main .start button{
+    width: 100%;
+    height: 70px; 
+    background-color: coral;
+    border-radius: 5px;
+    color: black;
+    font-weight: bolder;
+    z-index: 999;
+    font-size: 21px;
+}
+.plane{
+    /* border: 1px solid red; */
+    width: 102px;
+    height: 126px;
+    position: absolute;
+    left: 199px;
+    bottom: 0px;
+    display: none;
+    z-index: 9999;
+}
+.plane img{
+    width: 100%;
+    height: 100%;
+} 
+#timer{
+    width: 120px;
+    height: 50px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 50px;
+}
+#timer>span{
+    color: #f5f5f5;
+}
+#bar{
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 200px;
+    height: 30px;
+    /* border: 1px solid blue; */
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    /* background-color: rgb(0, 247, 255); */
+    background-color: black;
+    text-shadow: 1px 1px 0 #fff;
+    border-radius: 5px;
+    display: none;
+    outline: none;
+    border: none;
+}
+#bar span{
+    z-index: 999;
+    color: blue;
+}
+#bar .ui-progressbar-value{
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 50px;
+     background-color: red;
+     opacity: 0.5;
+     /* border: 1px solid blueviolet; */
+}
+#planet{
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    /* border: 1px solid violet; */
+    position: relative;
+    /* border: 1px solid violet; */
+}
+.planent{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* #energy{
+    width: 100%;
+    height: 100%;
+
+} */
+.energy{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.5;
+    position: absolute;
+}
+.bullet{
+    width: 12px;
+    height: 25px;
+    position: absolute;
+    /* bottom: 124px;
+    left: 248px; */
+    border-radius: 5px;
+    background-color: red;
+}
+.enemy{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#size{
+    display: none;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+#size button{
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 21px;
+}
+#music{
+    position: absolute;
+    display: none;
+    right: 10px;
+    bottom: 10px;
+    width: 60px;
+    border: 0;
+    outline: none;
+    border-radius: 50px;
+}
+#music span{
+    font-size: 21px;
+}
+#result{
+    position: absolute;
+    top: 10px;
+    left: 30%;
+    color: red;
+    display: none;
+}
+
+/*计算界面的布局样式*/
+.settlementBox{
+    color: red;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    border: 1px solid blue;
+}
+.settlementBox>button{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+}
+.settlementBox>button:hover{
+    /*display: none;*/
+    background-color: red;
+}
+.settlementBox>span:nth-child(1),
+.settlementBox>span:nth-child(2){
+    display: inline-block;
+    margin-bottom: 15px;
+}

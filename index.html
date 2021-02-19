@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='./JQuery/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.min.css'>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src='./JQuery/jquery-3.2.1.min.js'></script>
+    <script src='./JQuery/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.min.js'></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+     <!-- 外面的大盒子 -->
+     <div class="box">
+        <!-- 游戏主体盒子 -->
+        <div class="main">
+            <!-- 游戏logo盒子 -->
+            <div class="logo">
+               <img src="./logo/logo-01.png" alt="">
+            </div>
+            <!-- 游戏开始盒子 -->
+            <div class="start">
+               <button id="start">Start Game(游戏开始)</button>
+               <button id="rulesBtn" style="margin-top: 15px">游戏规则</button>
+            </div>
+            <!-- 音乐盒子 -->
+            <div id="musicBox">
+               <audio id="musicbg" src="./sound/background.mp3" autoplay loop></audio>
+               <audio id="star" src="./sound/star.mp3"></audio>
+               <audio id="hit" src="./sound/hit.mp3"></audio>
+               <audio id="destroyed" src="./sound/destroyed.mp3"></audio>
+            </div>
+            <!-- 我方飞机盒子 -->
+            <div class="plane">
+               <img src="./images/me1.png" alt="">
+            
+            </div>
+            <!-- 计时器部分 -->
+            <div id="timer">
+               <span></span>
+            </div>
+            <!-- 进度条部分 -->
+            <div id="bar">
+               <div id="lable">
+                   <span></span>
+               </div> 
+            </div>
+            <!-- 行星部分 -->
+            <div id="planet">
+         
+            </div>
+            <!-- 能量部分 -->
+            <div id="energy">
+               
+            </div>
+            <!-- 子弹部分 -->
+            <div id="bullet">
+               <!-- <span class="bullet"></span> -->
+            </div>
+            <!-- 敌方飞机部分 -->
+            <div id="enemy">
+               <!-- <img class="enemy" src="./images/enemyA1.png" alt="">
+               <img class="enemy" src="./images/enemyC.png" alt="">
+               <img class="enemy" src="./images/enemyB.png" alt=""> -->
+            </div>
+            <!-- 字体大小部分 -->
+            <div id="size">
+               <button id="reduce">减小</button>
+               <button id="enlarge">增大</button>
+            </div>
+            <!-- 背景音乐静音部分 -->
+            <div id="music">
+               <button id="musicBtn"><span>stop</span></button>
+            </div>
+            <!-- 分数部分 -->
+            <div id="result">
+               <span>分数为:0</span>
+            </div>
+        </div>
+    </div> 
+</body>
+
+</html>
